@@ -34,3 +34,26 @@ name = age > 10 ? "Pedro" : "Jack";
 const MyComponent = () => {
   return age > 10 ? <div>Pedro</div> : <div>Jack</div>;
 };
+
+const name = "Pedro";
+
+const person = {
+  // name: name,
+  name,
+  age: 20,
+  isMarried: false,
+};
+
+const name = person.name;
+const age = person.age;
+const isMarried = person.isMarried;
+
+const { name, age, isMarried } = person;
+
+const person2 = {
+  ...person,
+  name: "Jack",
+};
+
+const names = ["Pedro", "Jack", "Jessica"];
+const names2 = [...names, "Joel"];
