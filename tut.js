@@ -57,3 +57,13 @@ const person2 = {
 
 const names = ["Pedro", "Jack", "Jessica"];
 const names2 = [...names, "Joel"];
+
+let names = ["Pedro", "Jessica", "Carol", "Pedro", "Pedro"];
+
+names.map((name) => {
+  return <h1>{name}</h1>;
+});
+
+names.filter((name) => {
+  return name !== "Pedro";
+});
