@@ -17,3 +17,20 @@ const MyComponent = () => {
     console.log("hello world");
   }}
 ></button>;
+
+let age = 10;
+let name = "Pedro";
+
+if (age > 10) {
+  name = "Pedro";
+} else {
+  name = "Jack";
+}
+
+name = age > 10 && "Pedro"; // if true then name = "Pedro"
+name = age > 10 || "Pedro"; // if false then name = "Pedro"
+name = age > 10 ? "Pedro" : "Jack";
+
+const MyComponent = () => {
+  return age > 10 ? <div>Pedro</div> : <div>Jack</div>;
+};
